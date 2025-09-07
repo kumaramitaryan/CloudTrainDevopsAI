@@ -28,3 +28,23 @@ If successful, you’ll see:
 	Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
 	Hi kumaramitaryan! You've successfully authenticated, but GitHub does not provide shell access.
 	ubuntu@ip-172-31-27-103:~/.ssh$
+
+
+#### Then set your repo and test 
+git remote set-url origin git@github.com:kumaramitaryan/CloudTrainDevopsAI.git
+
+ubuntu@ip-172-31-27-103:~/amit/CloudTrainDevopsAI$ ssh -T git@github.com  
+Hi kumaramitaryan! You've successfully authenticated, but GitHub does not provide shell access.  
+
+##### ubuntu@ip-172-31-27-103:~/amit/CloudTrainDevopsAI$ git push origin main
+Enumerating objects: 7, done.  
+Counting objects: 100% (7/7), done.  
+Delta compression using up to 2 threads  
+Compressing objects: 100% (6/6), done.  
+Writing objects: 100% (6/6), 4.85 KiB | 4.85 MiB/s, done.  
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0  
+remote: Resolving deltas: 100% (2/2), done.  
+To github.com:kumaramitaryan/CloudTrainDevopsAI.git  
+   6a768c0..867abe4  main -> main  
+ubuntu@ip-172-31-27-103:~/amit/CloudTrainDevopsAI$  
+
